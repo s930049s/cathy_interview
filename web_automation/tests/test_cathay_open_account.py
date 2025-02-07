@@ -26,6 +26,7 @@ def test_cathay_open_account(browser):
     # 切換到新分頁
     browser_helper.wait_for_new_tab(previous_tabs)
     browser_helper.switch_to_new_tab()
+    browser_helper.wait_for_page_title("CUBE App")
     assert "CUBE App" in browser.title, "未跳轉至下載頁面"
     
     # 驗證 QR Code 尺寸
