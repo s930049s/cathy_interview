@@ -36,8 +36,9 @@ project/
 ├── requirements.txt                 # 依賴套件
 ├── pytest.ini                        # pytest 配置
 └── README.md                         # 本文件
+```
 
-⚙️ 安裝與環境設定
+##⚙️ 安裝與環境設定
 1️⃣ 安裝 Python 及 Virtual Environment
 請確保你已安裝 Python 3，並使用 venv 建立虛擬環境：
 
