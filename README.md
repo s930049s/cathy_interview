@@ -38,9 +38,9 @@ project/
 └── README.md                         # 本文件
 ```
 
-## ⚙️ 安裝與環境設定
+# ⚙️ 安裝與環境設定
 
-  # 1️⃣ 安裝 Python 及 Virtual Environment
+  ## 1️⃣ 安裝 Python 及 Virtual Environment
     請確保你已安裝 Python 3，並使用 venv 建立虛擬環境：
     
     創建虛擬環境
@@ -53,11 +53,11 @@ project/
     macOS/Linux
     source venv/bin/activate
   
-  # 2️⃣ 安裝必要套件
+  ## 2️⃣ 安裝必要套件
     在虛擬環境內執行：
     pip install -r requirements.txt
   
-  # 3️⃣ 下載 ChromeDriver
+  ## 3️⃣ 下載 ChromeDriver
     請確保你的 ChromeDriver 版本與 Google Chrome 瀏覽器相符：
   
     檢查 Chrome 版本
@@ -66,7 +66,7 @@ project/
     檢查 ChromeDriver 版本
     chromedriver --version
   
-  # ▶️ 執行測試
+  ## ▶️ 執行測試
     測試桌面版開戶流程:
     pytest tests/test_cathay_open_account.py -s
     
