@@ -27,6 +27,7 @@ def test_cathay_mobile_qr_hidden(browser):
     # 切換到新分頁，等待頁面完全載入
     browser_helper.wait_for_new_tab(previous_tabs)
     browser_helper.switch_to_new_tab()
+    browser_helper.wait_for_page_title("CUBE App")
     assert "CUBE App" in browser.title, "未跳轉至下載頁面"
     
     # 切換到行動版

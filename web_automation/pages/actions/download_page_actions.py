@@ -47,7 +47,6 @@ class DownloadPageActions:
         self.browser.execute_cdp_cmd("Emulation.setUserAgentOverride", {
             "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/537.36"
         })
-        logging.info("✅ 已切換為行動版模式")
         logging.info("已切換為行動版模式")
 
     def validate_qr_hidden(self):
@@ -59,6 +58,6 @@ class DownloadPageActions:
             logging.info("QR Code 在行動版模式下成功隱藏")
 
         except:
-            logging.error("QR Code 在行動版模式下仍然可見！")
+            logging.error("QR Code 在行動版模式下仍然可見")
 
             assert False, "QR Code 沒有隱藏！"

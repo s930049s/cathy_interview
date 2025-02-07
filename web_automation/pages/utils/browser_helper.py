@@ -21,6 +21,11 @@ class BrowserHelper:
         self.wait.until(lambda driver: len(driver.window_handles) > 1)
         self.browser.switch_to.window(self.browser.window_handles[-1])
         self.wait.until(lambda driver: driver.execute_script("return document.readyState") == "complete")
+
+    def wait_for_page_title(self, title_keyword):
+        """等待標題包含特定關鍵字"""
+        
+        self.wait.until(EC.title_contains(title_keyword))
     
     def wait_for_element_visible(self, by_locator):
         """等待元素可見，然後回傳該元素"""
