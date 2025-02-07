@@ -39,37 +39,38 @@ project/
 ```
 
 ## ⚙️ 安裝與環境設定
-1️⃣ 安裝 Python 及 Virtual Environment
-請確保你已安裝 Python 3，並使用 venv 建立虛擬環境：
 
-# 創建虛擬環境
-python -m venv venv
-
-# 啟動虛擬環境
-# Windows
-venv\Scripts\activate
-# macOS/Linux
-source venv/bin/activate
-
-2️⃣ 安裝必要套件
-在虛擬環境內執行：
-pip install -r requirements.txt
-
-3️⃣ 下載 ChromeDriver
-請確保你的 ChromeDriver 版本與 Google Chrome 瀏覽器相符：
-
-# 檢查 Chrome 版本
-chrome --version
-
-# 檢查 ChromeDriver 版本
-chromedriver --version
-
-▶️ 執行測試
-測試桌面版開戶流程:
-pytest tests/test_cathay_open_account.py -s
-
-測試行動版 QR Code 是否隱藏:
-pytest tests/test_cathay_mobile_qr.py -s
-
-產生測試報告
-pytest --html=report.html --self-contained-html
+  1️⃣ 安裝 Python 及 Virtual Environment
+  請確保你已安裝 Python 3，並使用 venv 建立虛擬環境：
+  
+  # 創建虛擬環境
+  python -m venv venv
+  
+  # 啟動虛擬環境
+  # Windows
+  venv\Scripts\activate
+  # macOS/Linux
+  source venv/bin/activate
+  
+  2️⃣ 安裝必要套件
+  在虛擬環境內執行：
+  pip install -r requirements.txt
+  
+  3️⃣ 下載 ChromeDriver
+  請確保你的 ChromeDriver 版本與 Google Chrome 瀏覽器相符：
+  
+  # 檢查 Chrome 版本
+  chrome --version
+  
+  # 檢查 ChromeDriver 版本
+  chromedriver --version
+  
+  ▶️ 執行測試
+  測試桌面版開戶流程:
+  pytest tests/test_cathay_open_account.py -s
+  
+  測試行動版 QR Code 是否隱藏:
+  pytest tests/test_cathay_mobile_qr.py -s
+  
+  產生測試報告
+  pytest --html=report.html --self-contained-html
